@@ -15,6 +15,6 @@ include("${FETCHCONTENT_BASE_DIR}/cmake_declare_and_fetch-src/DeclareAndFetchCMa
 
 set(BUILD_SHARED_LIBRARY ON)
 set(REDIRECT_SERIAL_OUT_TO_STD_OUT OFF)
-DeclareAndFetch(teensy_x86_stubs            https://github.com/newdigate/teensy-x86-stubs.git feature/shared_serial src)
+DeclareAndFetch(teensy_x86_stubs            https://github.com/newdigate/teensy-x86-stubs.git noinstall src)
 
 add_subdirectory(src)
